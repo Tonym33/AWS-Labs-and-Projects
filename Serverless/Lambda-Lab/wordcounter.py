@@ -3,8 +3,8 @@ import boto3
 
 def lambda_handler(event, context):
     # Configuration
-    bucket_name = "wordcounttester3"
-    topic_arn = "arn:aws:sns:us-west-2:802768592020:WordCountAlerts"
+    bucket_name = "..."
+    topic_arn = "arn:aws:..."
     
     try:
         # Initialize S3 client
