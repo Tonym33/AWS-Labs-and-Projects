@@ -1,6 +1,7 @@
 AWS Cloud Labs and Projects Summary
 
 As I am breaking through in cloud computing, I have completed several labs and projects using Amazon Web Services (AWS) to develop my foundational skills. My hands-on experience includes deploying and managing cloud resources, automating processes, and integrating AWS services. Some of the key areas I explored are:
+##Services
 
 -AWS EC2: Creating EC2 instances and hosting applications in the environment.
 -AWS VPC: Setting up a logically isolated enviroment.
