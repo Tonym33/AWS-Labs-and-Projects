@@ -53,7 +53,36 @@ aws s3 rm s3://bucket-name/old-image.jpg
 aws s3 ls s3://bucket-name/
 ```
 
- Now let's take a look at my process using AWS CLI to create a bucket and upload some content. Noticed that I got an error when creating the bucket, this happens when you create a bucket name that already exist(bucket names need to be globally unique).
-- ![Screenshot image](Screenshot6.png)
-Now this screen is to show that the user has permissions to upload,change or delete contents.
-- ![Screenshot image](Screenshot7.png)
+-Let's take a look at my process using AWS CLI to create a bucket and upload some content. Noticed that I got an error when creating the bucket, this happens when you create a bucket name that already exist(bucket names need to be globally unique).
+ ![Screenshot image](Screenshot6.png)
+ 
+-Now this screen is to show that the user has permissions to upload,change or delete contents.
+
+ ![Screenshot image](Screenshot7.png)
+ 
+-The JSON below shows the policy that detect a change on S3 then sends a message to the `s3NotificationTopic`
+```bash
+{
+  "Version": "2008-10-17",
+  "Id": "S3PublishPolicy",
+  "Statement": [
+    {
+      "Sid": "AllowPublishFromS3",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "SNS:Publish",
+      "Resource": "<ARN of s3NotificationTopic>",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:*:*:<bucketname>"
+
+        }
+      }
+    }
+  ]
+}
+```
+-SNS Topic created with an email subscription.
+![Screenshot image](Screenshot8.png)
