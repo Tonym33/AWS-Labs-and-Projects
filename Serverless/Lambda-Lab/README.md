@@ -13,6 +13,7 @@ This project implements an AWS Lambda function in Python that counts the number 
 - `wordcounter.py`: The Lambda handler code.
 - `requirements.txt`: Lists Python dependencies (if any).
 - `event.json`: Example S3 event for local testing.
+- `test.txt`: Test document for the word count funtion.
 
 ## Prerequisites
 
