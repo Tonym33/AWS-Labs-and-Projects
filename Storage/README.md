@@ -85,7 +85,7 @@ aws s3 ls s3://bucket-name/
 }
 ```
 -SNS Topic created with an email subscription.
-![Screenshot image](Screenshot8.png)
+
 
 -Then now we get to the commands on put, delete and  permissions change(which the user doesn't have the permission to do so).
 ![Screenshot image](Screenshot9.png)
