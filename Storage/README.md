@@ -86,6 +86,16 @@ aws s3 ls s3://bucket-name/
 ```
 -SNS Topic created with an email subscription.
 
+![Screenshot image](Screenshot8.png)
 
--Then now we get to the commands on put, delete and  permissions change(which the user doesn't have the permission to do so).
+-Then now we get to the commands on put, delete and  permissions change. Permissions cannot be changed as there is no access for this action as the last line shows
+
 ![Screenshot image](Screenshot9.png)
+
+- We do get some notifications on PUT and DELETE commands. The screenshots below shows these notifications through an email.
+- PUT
+![Screenshot image](Screenshot10.png)
+
+DELETE
+
+![Screenshot image](Screenshot11.png)
