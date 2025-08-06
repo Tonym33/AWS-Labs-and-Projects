@@ -7,10 +7,10 @@ This project implements an AWS Lambda function in Python that counts the number 
 1. **S3 Bucket** – Stores uploaded text files.
 2. **Lambda Function** – Triggered by S3 object creation, counts words, and publishes to SNS.
 3. **SNS Topic** – Receives the word count and sends an email.
-
+![Lambda Image](Lambda.png)
 ## Files
 
-- `lambda_function.py`: The Lambda handler code.
+- `wordcounter.py`: The Lambda handler code.
 - `requirements.txt`: Lists Python dependencies (if any).
 - `event.json`: Example S3 event for local testing.
 
@@ -36,5 +36,5 @@ This project implements an AWS Lambda function in Python that counts the number 
     - Subscribe your email to the SNS topic.
     - Grant Lambda permissions to access S3 and SNS.
 
-![Lambda Image](Lambda.png)
+
 
