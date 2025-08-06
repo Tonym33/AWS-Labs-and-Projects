@@ -51,4 +51,8 @@ aws s3 rm s3://bucket-name/old-image.jpg
 
 # List bucket contents
 aws s3 ls s3://bucket-name/
+```
+
+## Now let's take a look at my process using AWS CLI to create a bucket and upload some content. Noticed that I got an error when creating the bucket, this happens when you create a bucket name that already exist(bucket names need to be globally unique).
+- ![Screenshot image](Screenshot6.png)
 
