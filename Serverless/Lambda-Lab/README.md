@@ -30,7 +30,7 @@ This project implements an AWS Lambda function in Python that counts the number 
    ![screenshot 1](Screenshot1.png). 
 5. **Install dependencies**  
     If using external libraries, add them to `requirements.txt`.
-6. **Deploy Lambda**  
+6. **Deploy Lambda**  ![screenshot 2](Screenshot2.png).
     - Zip your code and dependencies.
     - Upload to AWS Lambda.
     - Set the S3 trigger and provide the SNS topic ARN via environment variables or directly in the code.
