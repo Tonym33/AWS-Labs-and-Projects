@@ -38,6 +38,9 @@ This project implements an AWS Lambda function in Python that counts the number 
     - Create an S3 bucket and SNS topic.
     - Subscribe your email to the SNS topic.
     - Grant Lambda permissions to access S3 and SNS.
-
+S3 Bucket has been created.
+![screenshot 3](Screenshot3.png).
+Setting up SNS Topic with email subscription
+![screenshot 4](Screenshot4.png).
 
 
