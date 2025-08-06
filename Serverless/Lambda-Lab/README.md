@@ -25,14 +25,16 @@ This project implements an AWS Lambda function in Python that counts the number 
 
 1. Login to AWS Console.  
 2. Select the Lambda service in the AWS Management Console.  
-3. Create a new Lambda function.  
-4. **Install dependencies**  
+3. Create a new Lambda function.
+   Below screenshot is my function with an output showing it has counted 6 words in my text file.
+   ![screenshot 1](Screenshot1.png). 
+5. **Install dependencies**  
     If using external libraries, add them to `requirements.txt`.
-5. **Deploy Lambda**  
+6. **Deploy Lambda**  
     - Zip your code and dependencies.
     - Upload to AWS Lambda.
     - Set the S3 trigger and provide the SNS topic ARN via environment variables or directly in the code.
-6. **Configure S3 and SNS**  
+7. **Configure S3 and SNS**  
     - Create an S3 bucket and SNS topic.
     - Subscribe your email to the SNS topic.
     - Grant Lambda permissions to access S3 and SNS.
