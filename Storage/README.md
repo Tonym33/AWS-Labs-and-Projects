@@ -93,7 +93,9 @@ aws s3 ls s3://bucket-name/
 ![Screenshot image](Screenshot9.png)
 
 - We do get some notifications on PUT and DELETE commands. The screenshots below shows these notifications through an email.
-- PUT
+  
+PUT
+
 ![Screenshot image](Screenshot10.png)
 
 DELETE
