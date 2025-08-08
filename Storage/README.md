@@ -1,5 +1,5 @@
 # AWS S3 Media Upload Workflow
-![Architecture image](Architecture.png)
+![Architecture image](images/Architecture.png)
 This project demonstrates a secure AWS-based workflow that allows an external user from a media company to manage product images using Amazon S3 and receive change notifications via Amazon SNS.
 
 ## Scenario Overview
