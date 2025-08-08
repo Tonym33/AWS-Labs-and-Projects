@@ -7,7 +7,7 @@ This project implements an AWS Lambda function in Python that counts the number 
 1. **S3 Bucket** – Stores uploaded text files.
 2. **Lambda Function** – Triggered by S3 object creation, counts words, and publishes to SNS.
 3. **SNS Topic** – Receives the word count and sends an email.
-![Lambda Image](Lambda.png)
+![Lambda Image](images/Architecture.png)
 ## Files
 
 - `wordcounter.py`: The Lambda handler code.
@@ -27,10 +27,10 @@ This project implements an AWS Lambda function in Python that counts the number 
 2. Select the Lambda service in the AWS Management Console.  
 3. Create a new Lambda function.
    Below screenshot is my function with an output showing it has counted 6 words in my text file.
-   ![screenshot 1](Screenshot1.png). 
+   ![screenshot 1](images/Screenshot1.png). 
 5. **Install dependencies**  
     If using external libraries, add them to `requirements.txt`.
-6. **Deploy Lambda**  ![screenshot 2](Screenshot2.png).
+6. **Deploy Lambda**  ![screenshot 2](images/Screenshot2.png).
     - Zip your code and dependencies.
     - Upload to AWS Lambda.
     - Set the S3 trigger and provide the SNS topic ARN via environment variables or directly in the code.
@@ -39,9 +39,9 @@ This project implements an AWS Lambda function in Python that counts the number 
     - Subscribe your email to the SNS topic.
     - Grant Lambda permissions to access S3 and SNS.
 S3 Bucket has been created.
-![screenshot 3](Screenshot3.png).
+![screenshot 3](images/Screenshot3.png).
 Setting up SNS Topic with email subscription
-![screenshot 4](Screenshot4.png).
+![screenshot 4](images/Screenshot4.png).
 **Overall output through subscribed email.
-![screenshot 5](Screenshot5.png).
+![screenshot 5](images/Screenshot5.png).
 
