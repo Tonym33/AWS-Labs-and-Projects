@@ -54,14 +54,14 @@ aws s3 ls s3://bucket-name/
 ```
 
 -Let's take a look at my process using AWS CLI to create a bucket and upload some content. Noticed that I got an error when creating the bucket, this happens when you create a bucket name that already exist(bucket names need to be globally unique).
- ![Screenshot image](Screenshot6.png)
+ ![Screenshot image](images/Screenshot6.png)
  
 -Now this screen is to show that the user has permissions to upload,change or delete contents.
 
- ![Screenshot image](Screenshot7.png)
+ ![Screenshot image](images/Screenshot7.png)
  
 -The JSON below shows the policy that detect a change on S3 then sends a message to the `s3NotificationTopic`
-```bash
+```JSON
 {
   "Version": "2008-10-17",
   "Id": "S3PublishPolicy",
@@ -86,18 +86,18 @@ aws s3 ls s3://bucket-name/
 ```
 -SNS Topic created with an email subscription.
 
-![Screenshot image](Screenshot8.png)
+![Screenshot image](images/Screenshot8.png)
 
 -Then now we get to the commands on put, delete and  permissions change. Permissions cannot be changed as there is no access for this action as the last line shows
 
-![Screenshot image](Screenshot9.png)
+![Screenshot image](images/Screenshot9.png)
 
 - We do get some notifications on PUT and DELETE commands. The screenshots below shows these notifications through an email.
   
 PUT
 
-![Screenshot image](Screenshot10.png)
+![Screenshot image](images/Screenshot10.png)
 
 DELETE
 
-![Screenshot image](Screenshot11.png)
+![Screenshot image](images/Screenshot11.png)
